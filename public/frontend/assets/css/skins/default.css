@@ -1,0 +1,2018 @@
+/**
+ * Name: default.css
+ *
+ * -
+ *
+ * The default color scheme for the template
+ *
+ */
+
+/* ==========================================================================
+  =Typography
+  ========================================================================== */
+
+body {
+    background-color: #fff;
+    color: #818181;
+}
+
+@media (max-width: 767px) {
+
+    body {
+        background-color: #fff;
+    }
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #323232;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+    color: #323232;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+    color: #7da7d9;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted #818181;
+}
+
+hr {
+    border: solid #ebebeb;
+}
+
+code {
+    border: 1px solid #ebebeb;
+    background-color: #f4f6f8;
+    color: #d50f25;
+}
+
+pre {
+    border: 1px solid #ebebeb;
+    background-color: #f4f6f8;
+}
+
+mark,
+ins {
+    border: 1px solid #ebebeb;
+    background-color: #f4f6f8;
+}
+
+.hr {
+    border-top: 1px solid #ebebeb;
+}
+
+.text-highlight {
+    color: #7da7d9;
+}
+
+.text-big {
+    color: #323232;
+}
+
+.mute {
+    color: #818181;
+}
+
+/* ==========================================================================
+   =Links
+   ========================================================================== */
+
+a,
+a:visited {
+    color: #7da7d9;
+}
+
+a:active {
+    background: transparent;
+}
+
+/* ==========================================================================
+   =Lists
+   ========================================================================== */
+/* =Custom lists
+   ========================================================================== */
+
+ul.fill-circle li:before {
+    color: #7da7d9;
+}
+
+/* ==========================================================================
+   =Tables
+   ========================================================================== */
+
+table,
+th,
+td {
+    border: 1px solid #ebebeb;
+}
+
+/* ==========================================================================
+   =Forms
+   ========================================================================== */
+
+fieldset legend {
+    background: #fff;
+}
+
+::-moz-placeholder,
+::-webkit-input-placeholder,
+:-ms-input-placeholder {
+    color: #818181;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea {
+    border: 3px solid #ebebeb;
+    background-color: #fff;
+    color: #323232;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+    border-color: #bbb;
+}
+
+input[type="text"]:disabled,
+input[type="password"]:disabled,
+input[type="date"]:disabled,
+input[type="datetime"]:disabled,
+input[type="datetime-local"]:disabled,
+input[type="month"]:disabled,
+input[type="week"]:disabled,
+input[type="email"]:disabled,
+input[type="number"]:disabled,
+input[type="search"]:disabled,
+input[type="tel"]:disabled,
+input[type="time"]:disabled,
+input[type="url"]:disabled,
+input[type="color"]:disabled,
+textarea:disabled {
+    background-color: #f4f6f8;
+}
+
+input[type="text"][disabled],
+input[type="text"][readonly],
+fieldset[disabled] input[type="text"],
+input[type="password"][disabled],
+input[type="password"][readonly],
+fieldset[disabled] input[type="password"],
+input[type="date"][disabled],
+input[type="date"][readonly],
+fieldset[disabled] input[type="date"],
+input[type="datetime"][disabled],
+input[type="datetime"][readonly],
+fieldset[disabled] input[type="datetime"],
+input[type="datetime-local"][disabled],
+input[type="datetime-local"][readonly],
+fieldset[disabled] input[type="datetime-local"],
+input[type="month"][disabled],
+input[type="month"][readonly],
+fieldset[disabled] input[type="month"],
+input[type="week"][disabled],
+input[type="week"][readonly],
+fieldset[disabled] input[type="week"],
+input[type="email"][disabled],
+input[type="email"][readonly],
+fieldset[disabled] input[type="email"],
+input[type="number"][disabled],
+input[type="number"][readonly],
+fieldset[disabled] input[type="number"],
+input[type="search"][disabled],
+input[type="search"][readonly],
+fieldset[disabled] input[type="search"],
+input[type="tel"][disabled],
+input[type="tel"][readonly],
+fieldset[disabled] input[type="tel"],
+input[type="time"][disabled],
+input[type="time"][readonly],
+fieldset[disabled] input[type="time"],
+input[type="url"][disabled],
+input[type="url"][readonly],
+fieldset[disabled] input[type="url"],
+input[type="color"][disabled],
+input[type="color"][readonly],
+fieldset[disabled] input[type="color"],
+textarea[disabled],
+textarea[readonly],
+fieldset[disabled] textarea {
+    background-color: #f4f6f8;
+}
+
+select {
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    color: #323232;
+}
+
+select:disabled {
+    background-color: #f4f6f8;
+}
+
+select:focus {
+    border-color: #bbb;
+}
+
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+    border: 3px solid #7da7d9;
+    color: #7da7d9;
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    border-color: #323232;
+    color: #323232;
+}
+
+/* ==========================================================================
+   =Wrap
+   ========================================================================== */
+
+#wrap {
+    background-color: #fff;
+}
+
+/* ==========================================================================
+   =Menu 
+   ========================================================================== */
+
+/* =Menu Skin
+   ========================================================================== */
+
+.sf-menu a {
+    color: #323232;
+}
+
+.sf-menu li a:before {
+    border-top: 3px solid #7da7d9;
+}
+
+.sf-menu > li > a,
+.sf-menu > li.dropdown > a {
+    color: #323232;
+}
+
+.sf-menu > li.current > a,
+.sf-menu li.sfHover > a,
+.sf-menu a:hover,
+.sf-menu li.sfHover a:hover {
+    color: #7da7d9;
+}
+
+/* =DropDown
+   ========================================================================== */
+
+.sf-menu li.dropdown ul {
+    background-color: #fff;
+    box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* =Mega Menu Section
+   ========================================================================== */
+
+.sf-mega {
+    box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.sf-mega-section {
+    border-right: 1px solid #ebebeb;
+}
+
+.sf-mega-section-title {
+    color: #323232;
+}
+
+/* =Menu Arrows
+   ========================================================================== */
+
+.sf-arrows .sf-with-ul:after {
+    border: 4px solid transparent;
+    border-top-color: #818181;
+}
+
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+    border-top-color: rgba(0, 0, 0, 0.7);
+}
+
+.sf-arrows ul .sf-with-ul:after {
+    border-color: transparent;
+    border-left-color: #818181;
+}
+
+.sf-arrows ul li > .sf-with-ul:focus:after,
+.sf-arrows ul li:hover > .sf-with-ul:after,
+.sf-arrows ul .sfHover > .sf-with-ul:after {
+    border-left-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ==========================================================================
+   =Mobile Menu 
+   ========================================================================== */
+
+#mobile-menu {
+    border-bottom: 1px solid #ebebeb;
+    background-color: #7da7d9;
+}
+
+#mobile-menu .sf-mega {
+    background-color: transparent;
+}
+
+#mobile-menu li a {
+    border-top: 1px solid #ebebeb;
+    color: #fff;
+}
+
+#mobile-menu .mobile-menu-submenu-arrow {
+    border-left: 1px solid #ebebeb;
+    color: #fff;
+}
+
+#mobile-menu .mobile-menu-submenu-arrow:hover {
+    background-color: #f4f6f8;
+    color: #323232;
+}
+
+/* ==========================================================================
+   =Custom search form 
+   ========================================================================== */
+
+#custom-search-button {
+    background: url(../../images/bg-search.png) no-repeat center center;
+}
+
+#custom-search-form:before {
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid #ebebeb;
+    border-left: 7px solid transparent;
+}
+
+#custom-search-form:after {
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-left: 7px solid transparent;
+}
+
+#custom-search-form #s {
+    background-color: #fff;
+}
+
+#custom-search-form #s:focus {
+    border-color: #ebebeb;
+}
+
+/* ==========================================================================
+   =Sticky Header
+   ========================================================================== */
+
+@media (min-width: 1025px) {
+
+    #header.stuck {
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.13);
+        background-color: #fff;
+    }
+
+}
+
+/* ==========================================================================
+   =Page Header
+   ========================================================================== */
+
+#page-header {
+    background: #f4f6f8 no-repeat center center;
+}
+
+/* ==========================================================================
+   =Fullwidth Section
+   ========================================================================== */
+
+.fullwidth-section {
+    background-color: #f4f6f8;
+}
+
+.video-section-description {
+    background-color: #b9cfea;
+    color: #fff;
+    box-shadow: 0 5px 43px 0 rgba(0, 0, 0, 0.14);
+}
+
+/* ==========================================================================
+   =Footer
+   ========================================================================== */
+
+#footer {
+    background-color: #f4f7fc;
+    color: #323232;
+}
+
+/* ==========================================================================
+   =Back to top
+   ========================================================================== */
+
+#back-to-top {
+    background-color: #323232;
+    color: #fff;
+}
+
+#back-to-top:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#back-to-top:hover i {
+    color: #fff;
+}
+
+/* ==========================================================================
+   =Misc
+   ========================================================================== */
+
+.javascript-required,
+.modern-browser-required {
+    background-color: #d50f25;
+    color: #fff;
+}
+
+/* ==========================================================================
+   =Accordions and Toggles
+   ========================================================================== */
+
+/* =Accordion
+   ========================================================================== */
+
+.accordion-item {
+    border: 3px solid #ebebeb;
+    color: #323232;
+}
+
+a.accordion-item {
+    color: #323232;
+}
+
+.accordion-item:after {
+    border-left: 3px solid #ebebeb;
+}
+
+.accordion-item:hover:after,
+.accordion-item.active:after {
+    border-left-color: #7da7d9;
+}
+
+.accordion-item:hover,
+.accordion-item.active {
+    border-color: #7da7d9;
+    color: #7da7d9;
+}
+
+/* =Toggle
+   ========================================================================== */
+
+.toggle-item {
+    border: 3px solid #ebebeb;
+    color: #323232;
+}
+
+a.toggle-item {
+    color: #323232;
+}
+
+.toggle-item:after {
+    border-left: 3px solid #ebebeb;
+}
+
+.toggle-item:hover:after,
+.toggle-item.active:after {
+    border-left-color: #7da7d9;
+}
+
+.toggle-item:hover,
+.toggle-item.active {
+    border-color: #7da7d9;
+    color: #7da7d9;
+}
+
+/* ==========================================================================
+   =Alerts
+   ========================================================================== */
+
+.alert {
+    border: 3px solid #ebebeb;
+    background-color: #f4f6f8;
+    color: #323232;
+}
+
+.alert.info {
+    border: 3px solid #86cde3;
+    background-color: #cce9f2;
+    color: #3194b1;
+}
+
+.alert.success {
+    border: 3px solid #b3cda1;
+    background-color: #d8f1c6;
+    color: #749958;
+}
+
+.alert.error {
+    border: 3px solid #e1a1a1;
+    background-color: #f9d9d9;
+    color: #b55454;
+}
+
+.alert.warning {
+    border: 3px solid #d1c9ae;
+    background-color: #fbf4dd;
+    color: #978c68;
+}
+
+/* ==========================================================================
+   =Boxes
+   ========================================================================== */
+
+.box.box-style-1 {
+    border: 3px solid #ebebeb;
+}
+
+.box.box-style-1:hover {
+    border-color: #7da7d9;
+}
+
+.box.box-style-2 {
+    background-color: #f4f6f8;
+    color: #818181;
+}
+
+.box.box-style-2:hover .btn {
+    border-color: #fff;
+    color: #fff;
+}
+
+.box.box-style-2:hover {
+    background-color: #7da7d9;
+    color: #fff;
+}
+
+.box.box-style-2:hover ul.fill-circle li:before {
+    color: #fff;
+}
+
+.box.box-style-2:hover h4 {
+    color: #fff;
+}
+
+/* ==========================================================================
+   =Buttons
+   ========================================================================== */
+
+/* =Default Button
+   ========================================================================== */
+
+.btn {
+    border: 3px solid #7da7d9;
+    color: #7da7d9;
+}
+
+a.btn {
+    color: #7da7d9;
+}
+
+.btn:before {
+    border-right: 3px solid #323232;
+    border-left: 3px solid #323232;
+}
+
+.btn:after {
+    border-top: 3px solid #323232;
+    border-bottom: 3px solid #323232;
+}
+
+.btn:hover {
+    color: #323232;
+}
+
+/* =Colored Buttons
+   ========================================================================== */
+
+.btn-black {
+    border-color: #323232;
+    color: #323232;
+}
+
+a.btn-black {
+    color: #323232;
+}
+
+.btn-black:after,
+.btn-black:before {
+    border-color: #7da7d9;
+}
+
+.btn-black:hover {
+    color: #7da7d9;
+}
+
+.btn-grey {
+    border-color: #818181;
+    color: #818181;
+}
+
+a.btn-grey {
+    color: #818181;
+}
+
+.btn-grey:after,
+.btn-grey:before {
+    border-color: #7da7d9;
+}
+
+.btn-grey:hover {
+    color: #7da7d9;
+}
+
+/* ==========================================================================
+   =Countdown
+   ========================================================================== */
+
+.countdown-section:after {
+    color: #323232;
+}
+
+.countdown-amount {
+    color: #7da7d9;
+}
+
+.countdown-period {
+    color: #323232;
+}
+
+/* ==========================================================================
+   =Contact form
+   ========================================================================== */
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="url"],
+#contact-form textarea {
+    border-bottom: 3px solid #ebebeb;
+}
+
+#contact-form input[type="text"]:focus,
+#contact-form input[type="email"]:focus,
+#contact-form input[type="url"]:focus,
+#contact-form textarea:focus {
+    border-color: #bbb;
+}
+
+label.validation-error {
+    color: #d50f25;
+}
+
+input.validation-error,
+textarea.validation-error,
+select.validation-error {
+    border: 1px solid #ebebeb;
+}
+
+/* ==========================================================================
+   =Dividers
+   ========================================================================== */
+
+.divider.single-line {
+    border-top: 3px solid #ebebeb;
+}
+
+.divider.double-line {
+    border-top: 8px double #ebebeb;
+}
+
+/* ==========================================================================
+   =Dropcaps
+   ========================================================================== */
+
+.dropcap.dropcap-square {
+    background-color: #7da7d9;
+    color: #ffffff;
+}
+
+.dropcap.dropcap-circle {
+    background-color: #7da7d9;
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   =Headlines
+   ========================================================================== */
+
+.headline h3:before {
+    color: #7da7d9;
+}
+
+.headline h3:after {
+    border-bottom: 2px solid #7da7d9;
+}
+
+.headline p:before,
+.headline p:after {
+    border-bottom: 3px solid #7da7d9;
+}
+
+/* ==========================================================================
+   =Icon Boxes
+   ========================================================================== */
+
+/* =Icon Box 1
+   ========================================================================== */
+
+.icon-box-1 {
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+}
+
+.icon-box-1 > i {
+    color: #7da7d9;
+}
+
+.icon-box-1:hover {
+    border-color: #7da7d9;
+}
+
+/* =Icon Box 2
+   ========================================================================== */
+
+.icon-box-2 {
+    color: #323232;
+}
+
+.icon-box-2:before {
+    border-left: 3px solid #bbb;
+}
+
+.icon-box-2:hover > i {
+    color: #7da7d9;
+}
+
+/* =Icon Box 3
+   ========================================================================== */
+
+.icon-box-3 > i {
+    color: #7da7d9;
+}
+
+.icon-box-3:hover {
+    border-color: #7da7d9;
+}
+
+/* =Icon Box 4
+   ========================================================================== */
+
+.icon-box-4 > i {
+    color: #7da7d9;
+}
+
+.icon-box-4:hover > i {
+    color: #323232;
+}
+
+/* =Icon Box 5
+   ========================================================================== */
+
+.icon-box-5 > i {
+    color: #7da7d9;
+}
+
+.icon-box-5:hover > i {
+    color: #323232;
+}
+
+/* ==========================================================================
+   =Image Box
+   ========================================================================== */
+
+.image-box {
+    border: 3px solid #ebebeb;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.03);
+}
+
+/* ==========================================================================
+   =Info box
+   ========================================================================== */
+
+.info-box {
+    background-color: #b9cfea;
+    color: #fff;
+}
+
+.info-box h1 {
+    color: #fff;
+}
+
+.info-box .btn {
+    border-color: #fff;
+    color: #fff;
+}
+
+/* ==========================================================================
+   =Modal window
+   ========================================================================== */
+
+.white-popup {
+    background: #fff;
+}
+
+/* ==========================================================================
+   =Our Process
+   ========================================================================== */
+
+/* =Vertical process
+   ========================================================================== */
+
+.vertical-process-builder {
+    color: #323232;
+}
+
+.vertical-process-builder li:before {
+    border-left: 3px solid #ebebeb;
+}
+
+.vertical-process-builder li:after {
+    color: #ebebeb;
+}
+
+.vertical-process-builder li:hover h1 {
+    background-color: #7da7d9;
+    color: #fff;
+}
+
+.vertical-process-builder li:hover .vertical-process-description h4 {
+    color: #7da7d9;
+}
+
+/* ==========================================================================
+   =Pie charts
+   ========================================================================== */
+
+.pie-chart i,
+.pie-chart .pie-chart-custom-text,
+.pie-chart .pie-chart-percent {
+    color: #323232;
+}
+
+/* ==========================================================================
+   =Pricing Tables
+   ========================================================================== */
+
+.pricing-table {
+    background-color: #fafafb;
+}
+
+.pricing-table-header {
+    background-color: #f4f7fc;
+}
+
+.pricing-table-header h5 {
+    background-color: #323232;
+    color: #fff;
+}
+
+.pricing-table:hover .pricing-table-header {
+    background-color: #7da7d9;
+    color: #fff;
+}
+
+.pricing-table:hover .pricing-table-header h1 {
+    color: #fff;
+}
+
+/* ==========================================================================
+   =Progress Bar
+   ========================================================================== */
+
+.progress-bar-description {
+    color: #323232;
+}
+
+.progress-bar {
+    background-color: #f4f6f8;
+}
+
+.progress-bar .progress-bar-outer {
+    background-color: #7da7d9;
+}
+
+.progress-percentage {
+    color: #323232;
+}
+
+/* ==========================================================================
+   =Revolution Slider
+   ========================================================================== */
+
+/* =Rev Slider Pager
+   ========================================================================== */
+
+.tp-bullets.default .tp-bullet {
+    border: 3px solid #bbb;
+    background: transparent;
+}
+
+.tp-bullets.default .tp-bullet:hover,
+.tp-bullets.default .tp-bullet.selected {
+    border-color: #323232;
+}
+
+/* =Rev Slider navigation
+   ========================================================================== */
+
+.tp-leftarrow.default,
+.tp-rightarrow.default {
+    background-color: #fff;
+}
+
+.tp-leftarrow.default:before,
+.tp-rightarrow.default:before {
+    color: #323232;
+}
+
+.tp-leftarrow.default:hover:before,
+.tp-rightarrow.default:hover:before {
+    background-color: #7da7d9;
+    color: #fff;
+}
+
+/* =Rev Slider typography
+   ========================================================================== */
+
+.tp-caption.title {
+    color: #323232;
+}
+
+.tp-caption.title-2 {
+    color: #fff;
+}
+
+.tp-caption.subtitle {
+    color: #323232;
+}
+
+.tp-caption.text {
+    color: #323232;
+}
+
+.tp-caption.text-2 {
+    color: #fff;
+}
+
+/* ==========================================================================
+   =Social Media
+   ========================================================================== */
+
+a.social-icon {
+    color: #323232;
+}
+
+a.facebook-icon:hover {
+    color: #0e59a0 !important;
+}
+
+a.twitter-icon:hover {
+    color: #0ea4ff !important;
+}
+
+a.dribble-icon:hover {
+    color: #ea73a0 !important;
+}
+
+a.pinterest-icon:hover {
+    color: #d73532 !important;
+}
+
+a.googleplus-icon:hover {
+    color: #282927 !important;
+}
+
+a.tumblr-icon:hover {
+    color: #586980 !important;
+}
+
+a.instagram-icon:hover {
+    color: #82685a !important;
+}
+
+a.rss-icon:hover {
+    color: #f79638 !important;
+}
+
+a.linkedin-icon:hover {
+    color: #018faf !important;
+}
+
+a.skype-icon:hover {
+    color: #00b0f6 !important;
+}
+
+a.flickr-icon:hover {
+    color: #0061db !important;
+}
+
+a.vimeo-icon:hover {
+    color: #63879c !important;
+}
+
+a.github-icon:hover {
+    color: #3b3b3b !important;
+}
+
+a.youtube-icon:hover {
+    color: #cc181e !important;
+}
+
+a.windows-icon:hover {
+    color: #6dc2e9 !important;
+}
+
+a.dropbox-icon:hover {
+    color: #007ee5 !important;
+}
+
+a.xing-icon:hover {
+    color: #026566 !important;
+}
+
+a.adn-icon:hover {
+    color: #1ea076 !important;
+}
+
+a.android-icon:hover {
+    color: #98cb02 !important;
+}
+
+a.apple-icon:hover {
+    color: #000000 !important;
+}
+
+a.behance-icon:hover {
+    color: #2d9ad2 !important;
+}
+
+a.bitbucket-icon:hover {
+    color: #214f81 !important;
+}
+
+a.bitcoin-icon:hover {
+    color: #f7931b !important;
+}
+
+a.codepan-icon:hover {
+    color: #000000 !important;
+}
+
+a.css3-icon:hover {
+    color: #3289ce !important;
+}
+
+a.delicious-icon:hover {
+    color: #3399fe !important;
+}
+
+a.deviantart-icon:hover {
+    color: #c8da30 !important;
+}
+
+a.digg-icon:hover {
+    color: #0080c2 !important;
+}
+
+a.drupal-icon:hover {
+    color: #0077b9 !important;
+}
+
+a.empire-icon:hover {
+    color: #000000 !important;
+}
+
+a.foursquare-icon:hover {
+    color: #daecb0 !important;
+}
+
+a.git-icon:hover {
+    color: #f34f29 !important;
+}
+
+a.gitti-icon:hover {
+    color: #634c3e !important;
+}
+
+a.hacker-news-icon:hover {
+    color: #f18642 !important;
+}
+
+a.html5-icon:hover {
+    color: #e54c1f !important;
+}
+
+a.joomla-icon:hover {
+    color: #016fb9 !important;
+}
+
+a.jsfiddle-icon:hover {
+    color: #4679a4 !important;
+}
+
+a.linux-icon:hover {
+    color: #fece0e !important;
+}
+
+a.maxcdn-icon:hover {
+    color: #f36f20 !important;
+}
+
+a.openid-icon:hover {
+    color: #fe6101 !important;
+}
+
+a.pagelines-icon:hover {
+    color: #3783e3 !important;
+}
+
+a.pied-piper-icon:hover {
+    color: #0c7b48 !important;
+}
+
+a.qq-icon:hover {
+    color: #23286c !important;
+}
+
+a.rebel-icon:hover {
+    color: #000000 !important;
+}
+
+a.reddit-icon:hover {
+    color: #cee3f8 !important;
+}
+
+a.renren-icon:hover {
+    color: #0d81e4 !important;
+}
+
+a.share-icon:hover {
+    color: #252525 !important;
+}
+
+a.slack-icon:hover {
+    color: #453744 !important;
+}
+
+a.soundcloud-icon:hover {
+    color: #fe4e00 !important;
+}
+
+a.spotify-icon:hover {
+    color: #80bb41 !important;
+}
+
+a.stack-exchange-icon:hover {
+    color: #265a93 !important;
+}
+
+a.stackoverflow-icon:hover {
+    color: #fea501 !important;
+}
+
+a.steam-icon:hover {
+    color: #191919 !important;
+}
+
+a.stumbleupon-icon:hover {
+    color: #f04f23 !important;
+}
+
+a.tencent-weibo-icon:hover {
+    color: #0063a7 !important;
+}
+
+a.trello-icon:hover {
+    color: #226784 !important;
+}
+
+a.vine-icon:hover {
+    color: #00b081 !important;
+}
+
+a.vk-icon:hover {
+    color: #50769d !important;
+}
+
+a.wechat-icon:hover {
+    color: #a4dc31 !important;
+}
+
+a.weibo-icon:hover {
+    color: #d82828 !important;
+}
+
+a.wordpress-icon:hover {
+    color: #454442 !important;
+}
+
+a.yahoo-icon:hover {
+    color: #4b04a8 !important;
+}
+
+/* ==========================================================================
+   =Tabs
+   ========================================================================== */
+
+/* =Horizontal tabs
+   ========================================================================== */
+
+.tabs-container .tabs-menu li a {
+    border: 3px solid #ebebeb;
+    color: #323232;
+}
+
+.tabs-container .tabs-menu li:first-child a {
+    border-left: 3px solid #ebebeb;
+}
+
+.tabs-container .tabs-menu li a:hover,
+.tabs-container .tabs-menu li.active a {
+    border-color: #7da7d9;
+    color: #7da7d9;
+}
+
+@media (max-width: 767px) {
+
+    .tabs-container .tabs-menu li a {
+        border: 3px solid #ebebeb;
+    }
+
+}
+
+/* ==========================================================================
+   =Testimonials
+   ========================================================================== */
+
+.testimonial-author h4 {
+    color: #7da7d9;
+}
+
+.testimonial blockquote:before {
+    color: #818181;
+}
+
+.testimonial blockquote p {
+    color: #323232;
+}
+
+/* ==========================================================================
+   =Team Member
+   ========================================================================== */
+
+.team-member {
+    border: 3px solid #ebebeb;
+}
+
+.team-member .social-media a.social-icon {
+    color: #818181;
+}
+
+.team-member-zoom {
+    background-color: #7da7d9;
+}
+
+a.team-member-zoom {
+    color: #fff;
+}
+
+a.team-member-zoom:focus {
+    background-color: #7da7d9;
+}
+
+.team-member:hover {
+    border-color: #7da7d9;
+}
+
+/* ==========================================================================
+   =Portfolio Item
+   ========================================================================== */
+
+.portfolio-item.no-image {
+    background-color: #f4f6f8;
+}
+
+.portfolio-item-overlay {
+    background-color: #7da7d9;
+}
+
+.portfolio-item-overlay-actions a {
+    color: #fff;
+}
+
+.portfolio-item-overlay-actions a:hover {
+    color: #323232;
+}
+
+.portfolio-item.no-image .portfolio-item-description,
+.portfolio-item-overlay .portfolio-item-description {
+    color: #fff;
+}
+
+.portfolio-item.no-image .portfolio-item-description p {
+    color: #323232;
+}
+
+.portfolio-item-preview + .portfolio-item-description p {
+    color: #7da7d9;
+}
+
+.portfolio-item.alt .portfolio-item-preview + .portfolio-item-description p {
+    color: #818181;
+}
+
+.portfolio-item-overlay .portfolio-item-description p,
+.portfolio-item-overlay .portfolio-item-description a:hover {
+    color: #fff;
+}
+
+.project-description {
+    background-color: #fff;
+}
+
+/* ==========================================================================
+   =Portfolio Filter
+   ========================================================================== */
+
+.portfolio-filter ul li a {
+    color: #323232;
+}
+
+.portfolio-filter ul li a:hover,
+.portfolio-filter ul li a.active {
+    color: #7da7d9;
+}
+
+/* ==========================================================================
+   =Portfolio Pagination
+   ========================================================================== */
+
+.portfolio-pagination .page-numbers {
+    border: 3px solid #ebebeb;
+    color: #818181;
+}
+
+.portfolio-pagination .page-numbers:hover,
+.portfolio-pagination .page-numbers.current {
+    border-color: #7da7d9;
+    background-color: #7da7d9;
+    color: #fff;
+}
+
+.portfolio-pagination .page-numbers.dots:hover {
+    background-color: transparent;
+    color: #7da7d9;
+}
+
+/* ==========================================================================
+   =Bx Slider
+   ========================================================================== */
+
+/* =Bx Slider Pager
+   ========================================================================== */
+
+.bx-wrapper .bx-pager.bx-default-pager a,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    border: 3px solid #bbb;
+    background-color: transparent;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    border-color: #323232;
+    background-color: transparent;
+}
+
+/* =Bx Slider Dir Nav
+   ========================================================================== */
+
+.bx-wrapper .bx-prev {
+    background: #323232 url(../../images/left.png) no-repeat center center;
+}
+
+.bx-wrapper .bx-next {
+    background: #323232 url(../../images/right.png) no-repeat center center;
+}
+
+.features-slider-navigation li {
+    border-left: 3px solid #d0d0d0;
+    color: #323232;
+}
+
+.features-slider-navigation li.active,
+.features-slider-navigation li:hover {
+    color: #7da7d9;
+}
+
+.features-slider-2 {
+    background-color: #fff;
+    color: #323232;
+}
+
+#features-slider-prev a,
+#features-slider-next a {
+    background-color: #fff;
+    color: #323232;
+}
+
+#features-slider-prev a:hover,
+#features-slider-next a:hover {
+    background-color: #7da7d9;
+    color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .features-slider-navigation.six-items li:first-child {
+        border-left: 3px solid #d0d0d0;
+    }
+
+    #features-slider-prev a,
+    #features-slider-next a {
+        background-color: #7da7d9;
+        color: #fff;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #features-slider-prev a,
+    #features-slider-next a {
+        background-color: #7da7d9;
+        color: #fff;
+    }
+
+}
+
+/* ==========================================================================
+   =Fullwidth Section
+   ========================================================================== */
+
+.fullwidth-section.custom-color-selected {
+    background-color: #222;
+    color: #fff;
+}
+
+.fullwidth-section.custom-color-selected a,
+.fullwidth-section.custom-color-selected h1,
+.fullwidth-section.custom-color-selected h2,
+.fullwidth-section.custom-color-selected h3,
+.fullwidth-section.custom-color-selected h4,
+.fullwidth-section.custom-color-selected h5,
+.fullwidth-section.custom-color-selected h6,
+.fullwidth-section.custom-color-selected .headline h3:before,
+.fullwidth-section.custom-color-selected .icon-box-2,
+.fullwidth-section.custom-color-selected .icon-box-4:hover i,
+.fullwidth-section.custom-color-selected .icon-box-5:hover i,
+.fullwidth-section.custom-color-selected .vertical-process-builder,
+.fullwidth-section.custom-color-selected .pie-chart i,
+.fullwidth-section.custom-color-selected .pie-chart .pie-chart-custom-text,
+.fullwidth-section.custom-color-selected .pie-chart .pie-chart-percent,
+.fullwidth-section.custom-color-selected .progress-bar-description,
+.fullwidth-section.custom-color-selected .progress-percentage,
+.fullwidth-section.custom-color-selected .tabs-container .tabs-menu li a,
+.fullwidth-section.custom-color-selected .testimonial blockquote:before,
+.fullwidth-section.custom-color-selected .testimonial blockquote p,
+.fullwidth-section.custom-color-selected .ewf_widget_latest_posts ul li,
+.fullwidth-section.custom-color-selected .ewf_widget_latest_posts ul li a,
+.fullwidth-section.custom-color-selected #newsletter-subscribe-form input[type="submit"],
+.fullwidth-section.custom-color-selected .ewf_widget_contact_info ul,
+.fullwidth-section.custom-color-selected .text-big,
+.fullwidth-section.custom-color-selected .features-slider-navigation li,
+.fullwidth-section.custom-color-selected .countdown-section:after,
+.fullwidth-section.custom-color-selected .countdown-period {
+    color: inherit;
+}
+
+.fullwidth-section.custom-color-selected a:hover,
+.fullwidth-section.custom-color-selected .icon-box-1 a:hover,
+.fullwidth-section.custom-color-selected .tabs-container .tabs-menu li a:hover,
+.fullwidth-section.custom-color-selected .tabs-container .tabs-menu li.active a,
+.fullwidth-section.custom-color-selected .ewf_widget_latest_posts ul li .title:hover,
+.fullwidth-section.custom-color-selected #newsletter-subscribe-form input[type="submit"]:hover {
+    color: #7da7d9;
+}
+
+.fullwidth-section.custom-color-selected .btn,
+.fullwidth-section.custom-color-selected .headline p:before,
+.fullwidth-section.custom-color-selected .headline p:after,
+.fullwidth-section.custom-color-selected .headline h3:after,
+.fullwidth-section.custom-color-selected .widget_tag_cloud a {
+    border-color: inherit;
+}
+
+.fullwidth-section.custom-color-selected .btn:after,
+.fullwidth-section.custom-color-selected .btn:before,
+.fullwidth-section.custom-color-selected .widget_tag_cloud a:before,
+.fullwidth-section.custom-color-selected .widget_tag_cloud a:after,
+.fullwidth-section.custom-color-selected #newsletter-subscribe-form input[type="submit"]:hover {
+    border-color: #7da7d9;
+}
+
+.fullwidth-section.custom-color-selected .icon-box-1 a,
+.fullwidth-section.custom-color-selected .portfolio-item-overlay a:hover {
+    color: #323232;
+}
+
+.fullwidth-section.custom-color-selected .icon-box-1,
+.fullwidth-section.custom-color-selected .pricing-table {
+    color: #818181;
+}
+
+.fullwidth-section.custom-color-selected .pricing-table-header h5,
+.fullwidth-section.custom-color-selected a.team-member-zoom:hover,
+.fullwidth-section.custom-color-selected .portfolio-pagination .page-numbers:hover {
+    color: #fff;
+}
+
+.fullwidth-section.custom-color-selected .btn-black:hover {
+    color: #323232;
+}
+
+.fullwidth-section.custom-color-selected .btn-black:after,
+.fullwidth-section.custom-color-selected .btn-black:before {
+    border-color: #323232;
+}
+
+.fullwidth-section.custom-color-selected .btn-grey:hover {
+    color: #818181;
+}
+
+.fullwidth-section.custom-color-selected .btn-grey:after,
+.fullwidth-section.custom-color-selected .btn-grey:before {
+    border-color: #818181;
+}
+
+#bg-2 {
+    background-color: #7da7d9;
+}
+
+#bg-3 {
+    background: url(../../../content/backgrounds/1920x1080-1.jpg) no-repeat center bottom;
+}
+
+#bg-4 {
+    background-color: #7da7d9;
+}
+
+#bg-5 {
+    background-color: #7da7d9;
+}
+
+#bg-6 {
+    background: -webkit-linear-gradient(transparent, #f4f7fc);
+    background: linear-gradient(transparent, #f4f7fc);
+}
+
+#bg-7 {
+    background-color: #323232;
+}
+
+#bg-8 {
+    background-image: url(../../../content/backgrounds/1920x1080-2.jpg);
+}
+
+#bg-9 {
+    background-image: url(../../../content/backgrounds/1920x1080-3.jpg);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.18);
+}
+
+#bg-10 {
+    background-image: url(../../../content/backgrounds/1920x1080-4.jpg);
+}
+
+#bg-11 {
+    background-image: url(../../../content/backgrounds/1920x1600.jpg);
+}
+
+#bg-13 {
+    background: url(../../../content/backgrounds/1920x1080-1.jpg) no-repeat center bottom;
+}
+
+#bg-14 {
+    background-color: #7da7d9;
+}
+
+#bg-15 {
+    background-image: url(../../../content/backgrounds/1920x1800.jpg);
+}
+
+#bg-16 {
+    background-color: #7da7d9;
+}
+
+#bg-17 {
+    background-color: #7da7d9;
+}
+
+#bg-19 {
+    background-image: url(../../../content/backgrounds/1920x1080-4.jpg);
+}
+
+#bg-20 {
+    background-image: url(../../../content/backgrounds/1920x1080-4.jpg);
+}
+
+/* ==========================================================================
+   =WordPress Default Classes
+   ========================================================================== */
+
+/* Caption */
+
+.caption-text,
+.wp-caption-text {
+    color: #bbbbbb;
+}
+
+/* Gallery */
+
+.gallery-caption {
+    color: #bbbbbb;
+}
+
+/* ==========================================================================
+   =WordPress Post(s) 
+   ========================================================================== */
+
+.post {
+    border: 3px solid #ebebeb;
+}
+
+.post:hover {
+    background-color: #f4f7fc;
+}
+
+.sticky {
+    border: 1px solid #ebebeb;
+}
+
+.sticky-post {
+    background-color: #7da7d9;
+    color: #fff;
+}
+
+.posted-on,
+.cat-links,
+.tags-links,
+.comments-link,
+.post-format,
+.full-size-link {
+    color: #323232;
+}
+
+.posted-on a,
+.cat-links a,
+.tags-links a,
+.comments-link a,
+.post-format a,
+.full-size-link a {
+    color: #818181;
+}
+
+.byline a {
+    color: #323232;
+}
+
+/* ==========================================================================
+   =WordPress pagination and navigation
+   ========================================================================== */
+
+.pagination .page-numbers {
+    border: 3px solid #ebebeb;
+    color: #818181;
+}
+
+.pagination .page-numbers:hover,
+.pagination .page-numbers.current {
+    border-color: #7da7d9;
+    background-color: #7da7d9;
+    color: #fff;
+}
+
+.pagination .page-numbers.dots:hover {
+    background-color: transparent;
+    color: #7da7d9;
+}
+
+/* ==========================================================================
+   =WordPress Comments
+   ========================================================================== */
+
+.comment-list {
+    color: #323232;
+}
+
+.comment-list .pingback,
+.comment-list .trackback {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.comment-author a {
+    color: #323232;
+}
+
+.comment-meta a {
+    color: #818181;
+}
+
+/* ==========================================================================
+   =WordPress Comments Navigation
+   ========================================================================== */
+
+.comment-navigation {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+/* ==========================================================================
+   =WordPress Comment Form
+   ========================================================================== */
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"],
+.comment-form textarea {
+    border-bottom: 3px solid #ebebeb;
+}
+
+.comment-form input[type="text"]:focus,
+.comment-form input[type="email"]:focus,
+.comment-form input[type="url"]:focus,
+.comment-form textarea:focus {
+    border-color: #bbb;
+}
+
+.no-comments {
+    border-top: 1px solid #ebebeb;
+}
+
+.required {
+    color: #d50f25;
+}
+
+/* ==========================================================================
+   =WordPress Widgets
+   ========================================================================== */
+
+/* =Search Widget
+   ========================================================================== */
+
+#searchsubmit {
+    background: url(../../images/bg-search.png) no-repeat center center;
+}
+
+/* =Pages Widget
+   ========================================================================== */
+
+.widget_pages a {
+    color: #323232;
+}
+
+.widget_pages a:hover {
+    color: #7da7d9;
+}
+
+.widget_pages a:hover:before {
+    color: #7da7d9;
+}
+
+/* =Archive Widget
+   ========================================================================== */
+
+.widget_archive a {
+    color: #323232;
+}
+
+.widget_archive a:before {
+    color: #ebebeb;
+}
+
+.widget_archive a:hover {
+    color: #7da7d9;
+}
+
+.widget_archive a:hover:before {
+    color: #7da7d9;
+}
+
+/* =Categories Widget
+   ========================================================================== */
+
+.widget_categories a {
+    color: #323232;
+}
+
+.widget_categories a:before {
+    color: #ebebeb;
+}
+
+.widget_categories a:hover {
+    color: #7da7d9;
+}
+
+.widget_categories a:hover:before {
+    color: #7da7d9;
+}
+
+/* =Meta Widget
+   ========================================================================== */
+
+.widget_meta a {
+    color: #323232;
+}
+
+.widget_meta a:before {
+    color: #ebebeb;
+}
+
+.widget_meta a:hover {
+    color: #7da7d9;
+}
+
+.widget_meta a:hover:before {
+    color: #7da7d9;
+}
+
+/* =Tag Cloud Widget
+   ========================================================================== */
+
+.widget_tag_cloud a {
+    border: 3px solid #7da7d9;
+    color: #7da7d9;
+}
+
+.widget_tag_cloud a:before {
+    border-right: 3px solid #323232;
+    border-left: 3px solid #323232;
+}
+
+.widget_tag_cloud a:after {
+    border-top: 3px solid #323232;
+    border-bottom: 3px solid #323232;
+}
+
+.widget_tag_cloud a:hover {
+    color: #323232;
+}
+
+/* =Calendar Widget
+   ========================================================================== */
+
+#wp-calendar tbody a {
+    background-color: #7da7d9;
+    color: #fff;
+}
+
+/* =Nav Menu Widget
+   ========================================================================== */
+
+.widget_nav_menu a {
+    color: #323232;
+}
+
+.widget_nav_menu a:before {
+    color: #ebebeb;
+}
+
+.widget_nav_menu a:hover {
+    color: #7da7d9;
+}
+
+.widget_nav_menu a:hover:before {
+    color: #7da7d9;
+}
+
+/* ==========================================================================
+   =WordPress Custom Widgets
+   ========================================================================== */
+
+/* =EWF Contact Info widget
+   ========================================================================== */
+
+.ewf_widget_contact_info ul {
+    color: #323232;
+}
+
+.ewf_widget_contact_info ul li span {
+    color: #7da7d9;
+}
+
+.ewf_widget_contact_info ul li a {
+    color: #323232;
+}
+
+/* =EWF Newsletter subscribe widget
+   ========================================================================== */
+
+#newsletter-subscribe-form input[type="submit"] {
+    background-color: #7da7d9;
+    color: #fff;
+}
+
+/* =EWF Latest posts widget
+   ========================================================================== */
+
+.ewf_widget_latest_posts ul li {
+    color: #323232;
+}
+
+.ewf_widget_latest_posts ul li a {
+    color: #818181;
+}
+
+.ewf_widget_latest_posts ul li a.post-date {
+    color: #7da7d9;
+}
+
+.ewf_widget_latest_posts ul li .title {
+    color: #323232;
+}
+
+.ewf_widget_latest_posts ul li .title:hover {
+    color: #7da7d9;
+}
+
+/* =EWF Navigation widget
+   ========================================================================== */
+
+.ewf_widget_navigation li {
+    border-bottom: 1px solid #ebebeb;
+}
+
+/* =EWF Social media widget
+   ========================================================================== */
+
+#footer .ewf_widget_social_media a.social-icon {
+    color: #818181;
+}
+
+.my-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+}
